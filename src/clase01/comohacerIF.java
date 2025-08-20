@@ -18,7 +18,7 @@ public class comohacerIF {
 		 System.out.println(mensaje);
 			 
 		 
-		 int numero = 33 ;
+		 
 		 
 		 
 		 
