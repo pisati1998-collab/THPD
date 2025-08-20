@@ -1,5 +1,5 @@
 package clase01;
 
-public class c1 {
+public class kakaka {
 
 }
