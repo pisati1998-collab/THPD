@@ -27,7 +27,7 @@ Scanner scanner = new Scanner(System.in);
 				
 			}
 			
-		   }else if(edad >=JUBILACIONMUJER && genero == 'F') {
+		   else if(edad >=JUBILACIONMUJER && genero == 'F') {
 			   System.out.println("Te podes Jubilar");
 		   
 		   
@@ -45,7 +45,7 @@ Scanner scanner = new Scanner(System.in);
 
 
 }
-	}
+	
 		
 
 	
