@@ -6,6 +6,8 @@ public class Ejercicio2108 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		
+		
 		double nota1 , nota2, nota3, porcentaje;
 		System.out.println("Ingrese la nota 1");
 		nota1 = Double.parseDouble(input.nextLine());
