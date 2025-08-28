@@ -19,16 +19,16 @@ public class ejercicio24 {
 
 			for(int i = num1 ; i <= num2 ; i++ ) {
 
-				System.out.print(i + "  ");
+				System.out.println(i + "  ");
 
 			} 
 
 
 
-			System.out.println("\nExcluyendolo");
+			System.out.println("Excluyendolo");
 			for(int j = num1 + 1; j < num2; j++) {
 
-				System.out.print(j+" ");
+				System.out.println(j+" ");
 
 
 			} 
@@ -37,6 +37,6 @@ public class ejercicio24 {
 
 			System.out.println("Error");
 		}
-
+		input.close();
 	}
 }
