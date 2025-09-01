@@ -14,7 +14,7 @@ public class practicafor2 {
 
 
 		for(int i = 1; i <= n; i++){
-			acumulador += i;
+			acumulador = +i;
 			System.out.println(" i = " + n + " acumulador " + acumulador);
 		}
 		System.out.println("La suma de " + n + " = " + acumulador);
