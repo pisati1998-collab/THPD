@@ -23,7 +23,7 @@ public class ejerciciodechat {
 			do {
 				System.out.println("Elije un producto Margarita , Napolitana , Cuatro Quesos ");
 				producto = input.nextLine();	
-			}while(!producto.equalsIgnoreCase(...)(CUATROQUESOS) && !producto.equalsIgnoreCase(NAPOLITANA) && !producto.equalsIgnoreCase(MARGARITA));
+			}while(!producto.equalsIgnoreCase(CUATROQUESOS) && !producto.equalsIgnoreCase(NAPOLITANA) && !producto.equalsIgnoreCase(MARGARITA));
 			
 			
 			do {
