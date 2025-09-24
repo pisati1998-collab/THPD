@@ -1,0 +1,93 @@
+package clase01;
+
+import java.util.Scanner;
+
+public class practicaparcial {
+	  public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+
+	        System.out.print("Cantidad de estudiantes: ");
+	        int n = Integer.parseInt(sc.nextLine().trim());
+
+	        String mejorEstudiante = "";
+	        double mejorPromedio = 0.0;
+
+	        int reprobados = 0;
+	        int sumaPromediosCurso = 0;
+	        double promedio = 0 ;
+
+	        for (int i = 1; i <= n ; i++) {
+	            System.out.println("\n--- Estudiante " + i + " ---");
+	            System.out.print("Nombre: ");
+	            String nombre = sc.nextLine().trim();
+
+	            System.out.print("Cantidad de evaluaciones: ");
+	            int k = Integer.parseInt(sc.nextLine().trim());
+
+	            double sumaNotaPorPeso = 0.0;
+	            int sumaPesos = 0;
+
+	            for (int j = 0; j < k; j++) {
+	                System.out.print("Nombre evaluación: ");
+	                String eval = sc.nextLine().trim();
+
+	                System.out.print("Nota (0.0 - 5.0): ");
+	                double nota = Double.parseDouble(sc.nextLine().trim());
+
+	                System.out.print("Peso (%): ");
+	                int peso = Integer.parseInt(sc.nextLine().trim());
+
+	                sumaPesos += peso;
+	                
+	                sumaNotaPorPeso += nota * peso;
+	                
+	              
+
+	                	
+	            }
+	                if(sumaPesos > 0) {
+	                	 promedio = sumaNotaPorPeso /sumaPesos;
+	                	
+	                }else {
+	                	
+	                	promedio = 0.0;
+	                }
+	            
+	            
+	            if (promedio > mejorPromedio) {
+	                mejorPromedio = promedio;
+	                mejorEstudiante = nombre;
+	            }
+
+	            if (promedio < 3.0) {
+	                reprobados++;
+	            }
+	            
+
+	            System.out.printf("%s — Promedio: %.2f%n", nombre, promedio);
+
+	            sumaPromediosCurso += promedio;
+	        }
+
+	        double promedioCurso =  (sumaPromediosCurso / n);
+
+	        if (mejorEstudiante.isEmpty()) {
+	            System.out.println("\nNo hay mejor estudiante.");
+	        } else {
+	            System.out.printf("\nMejor estudiante: %s con %.2f%n", mejorEstudiante, mejorPromedio);
+	        }
+
+	        System.out.printf("Promedio del curso: %.2f%n", promedioCurso);
+	        System.out.println("Reprobados: " + reprobados);
+
+	        sc.close();
+	    }
+	}
+
+	
+		
+
+	
+
+
+

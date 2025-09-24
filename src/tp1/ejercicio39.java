@@ -24,22 +24,16 @@ public class ejercicio39 {
 		for(int i = 1; i <= jugadores; i++){
 
 			String nombre = "";
-			int n = 0; 
+
 			int total = 0;
 
-			while (n == 0) {
+			do   {
 				System.out.println("Nombre del jugador " + i + ": ");
 				nombre = input.nextLine();
 
-				if (!nombre.isEmpty()) {
 
-					n = 1;
-				} 
-				else {
-					System.out.println("El nombre no puede estar vacio.");
-				}
 
-			}
+			}while(nombre.isEmpty());
 
 
 

@@ -10,7 +10,7 @@ public class ejerciciopreparcial {
 		final int CANT_BARRIO = 10;
 		String nombreBarrio , nombreArtista;
 		int horasObras = 0 , cantPintura = 0 , totalHorasTrabajas = 0 , totalPintura = 0 , cantObras = 0 ,totalPinturaArtista = 0 ,pinturaDelBarrio = 0 , maxPintura =0;
-		final String FIN = "Finalizar";
+		final String FIN = "Fin";
 		double  promedio  = 0 ;
 		String artistaMaxPintura = "";
 
@@ -37,6 +37,7 @@ public class ejerciciopreparcial {
 			cantObras = 0;
 			pinturaDelBarrio = 0;
 			totalHorasTrabajas = 0;
+			cantObras++;
 			
 
 		
@@ -48,7 +49,7 @@ public class ejerciciopreparcial {
 					System.out.println("Ingrese horas necesaria para finalizar la obra ");
 					horasObras = Integer.parseInt(input.nextLine());
 					
-					cantObras++;
+					
 
 
 				}while(horasObras <= 0);
@@ -93,7 +94,7 @@ public class ejerciciopreparcial {
 			}
 			
 			 
-			System.out.println("Las horas trabajadas es  " +totalHorasTrabajas);
+			System.out.println("Las horas trabajadas  para " +nombreBarrio+  " Es de " +totalHorasTrabajas);
 			System.out.println("La Cantidad de pintura " + ((totalPintura / 1000) / cantObras));
 			System.out.println("El artista que más pintura utilizó fue: " + artistaMaxPintura + " con " + maxPintura + " ml");
 
