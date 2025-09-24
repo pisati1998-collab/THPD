@@ -27,12 +27,19 @@ public class ejercicio39 {
 
 			int total = 0;
 
+<<<<<<< HEAD
 			do   {
+=======
+			do {
+>>>>>>> branch 'master' of https://github.com/pisati1998-collab/THPD.git
 				System.out.println("Nombre del jugador " + i + ": ");
 				nombre = input.nextLine();
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> branch 'master' of https://github.com/pisati1998-collab/THPD.git
 			}while(nombre.isEmpty());
 
 
@@ -64,7 +71,7 @@ public class ejercicio39 {
 				else if( distancia <= 50) {
 
 					categoria = 2;
-				}
+				}	
 				else {
 
 					categoria =3;
